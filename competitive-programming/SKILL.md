@@ -482,8 +482,8 @@ razonamiento; no lo reemplaza.
 2. Prepara la carpeta (§4): `sol.cpp` con la plantilla §3.0 y `solve()` vacío
    (en LeetCode: la firma exacta de la clase con cuerpo vacío y el harness `LOCAL`
    listo), y `tests/N.in` / `N.out` con los ejemplos del enunciado.
-3. Recuerda en una línea las ayudas disponibles: `/structure`, `/techniques`,
-   `/input` (pistas por niveles y casos borde) y `verify_limits.py`.
+3. Recuerda en una línea las ayudas disponibles: `/hint 1–3`, `/structure`,
+   `/techniques`, `/input` (pistas por niveles y casos borde) y `verify_limits.py`.
 4. **Espera.** Sin idea, sin complejidad objetivo, sin pistas no pedidas.
 
 **Cuando el usuario trae su código** (WA, TLE, RE o "¿está bien?"):
@@ -491,7 +491,7 @@ razonamiento; no lo reemplaza.
 - Reporta **qué** falla: el veredicto, el contraejemplo mínimo, la salida esperada y
   la obtenida. **No** digas cómo arreglarlo ni reescribas su código, salvo que lo pida.
 - Si te pide una pista, da la **más pequeña que lo desbloquee** (una pregunta o una
-  observación), no la solución.
+  observación), no la solución, y recuérdale `/hint`, que además registra el nivel usado.
 - `brute` y `gen` se escriben solo si los pide (el brute ya revela una idea).
 
 **Solo cuando lo pida explícitamente** ("resuélvelo", "muéstrame la solución", "dame

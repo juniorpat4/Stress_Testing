@@ -16,6 +16,7 @@ y buscan contraejemplos a tu código.
 | `structure/` | Comando `/structure`: estructuras de datos candidatas para el problema (pistas → veredicto). |
 | `techniques/` | Comando `/techniques`: técnicas candidatas (búsqueda binaria, dos punteros, DP…), en dos niveles. |
 | `input/` | Comando `/input`: 3 casos borde con su output, verificado ejecutando un brute force. |
+| `hint/` | Comando `/hint 1–3`: escalera de pistas (observación → familia de técnica → invariante clave). Anota en `problems/HINTS.md` el nivel que necesitaste. |
 | `problems/` | Problemas resueltos y verificados que sirven de ejemplo de uso (ver abajo). |
 
 ## Requisitos
@@ -30,7 +31,7 @@ y buscan contraejemplos a tu código.
 Cada skill se instala con un enlace simbólico en `~/.claude/skills`. Desde la raíz del repo:
 
 ```bash
-for skill in competitive-programming structure techniques input; do ln -s "$PWD/$skill" ~/.claude/skills/$skill; done
+for skill in competitive-programming structure techniques input hint; do ln -s "$PWD/$skill" ~/.claude/skills/$skill; done
 ```
 
 Reinicia la sesión de Claude Code para que cargue las skills.
@@ -41,7 +42,10 @@ Reinicia la sesión de Claude Code para que cargue las skills.
   `sol.cpp` con la plantilla y `tests/` con los ejemplos, y espera. Solo escribe la solución
   si se lo pides ("resuélvelo").
 - **`/structure`, `/techniques`, `/input`** sobre el problema actual. Los dos primeros
-  muestran primero candidatas sin veredicto; pide «¿cuál?» para verlo.
+  muestran primero candidatas sin veredicto; al pedir «¿cuál?», antes te preguntan qué
+  complejidad esperas y califican tu razonamiento.
+- **`/hint 1`, `/hint 2`, `/hint 3`**: una pista cada vez más fuerte. `problems/HINTS.md`
+  empieza vacío y guarda qué nivel necesitaste en cada problema, para repasarlos después.
 - **Trae tu código con WA/TLE/RE**: la skill ejecuta los scripts y te dice qué falla (el
   contraejemplo), sin reescribir tu solución.
 

@@ -38,7 +38,12 @@ antes de seguir**, porque cambia la complejidad objetivo.
 - **Nivel 1, pistas (por defecto):** muestra las candidatas **sin decir cuál sirve**.
 - **Nivel 2, veredicto:** si `$ARGUMENTS` contiene "veredicto" o "¿cuál?", o el usuario
   lo pide después de un nivel 1 ("¿cuál?", "dame el veredicto"), sobre el mismo problema.
-  Si el usuario ya eligió una ("usaría X"), empieza diciendo si su elección sirve y por qué.
+  **El veredicto cuesta:** antes de mostrarlo, pregunta en una línea *"Antes del veredicto:
+  ¿qué complejidad esperas y por qué encaja con las restricciones?"* y detente. Cuando
+  responda, **califica primero su razonamiento** (✓ o ✗ con el motivo, 1–2 frases) y solo
+  después muestra el nivel 2. Si ya razonó la complejidad al pedirlo, no vuelvas a
+  preguntar; si responde "no sé" o "salta", da el veredicto directamente.
+  Si eligió una candidata ("usaría X"), empieza diciendo si su elección sirve y por qué.
 
 ## Formato nivel 1: pistas
 
